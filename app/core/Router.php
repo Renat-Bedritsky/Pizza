@@ -42,9 +42,9 @@ class Router {
         // echo '<br>';
         // print_r($this->params);
 
-        if (!$this->action) {
-            include 'app/core/Controller.php';
-            Controller::set404();
-        }
+        // if (!$this->action) {
+        //     include 'app/core/Controller.php';
+        //     Controller::set404();
+        // }
     }
 }

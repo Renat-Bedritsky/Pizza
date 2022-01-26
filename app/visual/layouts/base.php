@@ -1,26 +1,11 @@
 <?php $info = $_POST['info']; ?>
 
-<style>
-    .products_content div form {
-        width: 380px;
-        margin: auto;
-        text-align: center;
-        padding-top: 10px;
-    }
-    
-    .products_content div form button {
-        font-size: 32px;
-        padding: 5px 0;
-        width: 100%;
-        border: 0;
-        background-color: white;
-        cursor: pointer;
-    }
-    
-    .products_content div form button:hover {
-        background-color: rgb(255, 205, 65);
-    }
-</style>
+<?php
+// echo '<pre>';
+// print_r($_POST);
+// echo '</pre';
+if (isset($_POST['sauce-next'])) echo Message();
+?>
 
 <div class="products">
     <div class="products_wrapper">
@@ -29,33 +14,150 @@
             <?php if ($info['content'] == 'type') { ?>
 
                 <div class="products_type">
-                    <form method="POST">
-                        <button name="type" value="Пепперони">Пепперони</button> <br>
-                        <button name="type" value="Деревенская">Деревенская</button><br>
-                        <button name="type" value="Гавайская">Гавайская</button><br>
-                        <button name="type" value="Грибная">Грибная</button><br>
+                    <form method="POST" class="form">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="type1" name="type" value="Пепперони">
+                                    <label class="label" for="type1">Пепперони</label>
+                                </td>
+                                <td>
+                                    <span class="price">от 30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="type2" name="type" value="Деревенская">
+                                    <label class="label" for="type2">Деревенская</label>
+                                </td>
+                                <td>
+                                    <span class="price">от 30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="type3" name="type" value="Гавайская">
+                                    <label class="label" for="type3">Гавайская</label>
+                                </td>
+                                <td>
+                                    <span class="price">от 30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="type4" name="type" value="Грибная">
+                                    <label class="label" for="type4">Грибная</label>
+                                </td>
+                                <td>
+                                    <span class="price">от 30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button name="type-next">Далее</button>
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
 
             <?php } elseif ($info['content'] == 'size') { ?>
 
                 <div class="products_size">
-                    <form method="POST">
-                        <button name="size" value="21">21 см</button> <br>
-                        <button name="size" value="26">26 см</button><br>
-                        <button name="size" value="31">31 см</button><br>
-                        <button name="size" value="45">45 см</button><br>
+                    <form method="POST" class="form">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="size1" name="size" value="21">
+                                    <label class="label" for="size1">21 см</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="size2" name="size" value="26">
+                                    <label class="label" for="size2">26 см</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="size3" name="size" value="31">
+                                    <label class="label" for="size3">31 см</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="size4" name="size" value="45">
+                                    <label class="label" for="size4">45 см</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button name="size-next">Далее</button>
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
 
             <?php } elseif ($info['content'] == 'sauce') { ?>
 
-                <div class="products_sauce">
-                    <form method="POST">
-                        <button name="sauce" value="Сырный">Сырный</button> <br>
-                        <button name="sauce" value="Кисло-сладкий">Кисло-сладкий</button><br>
-                        <button name="sauce" value="Чесночный">Чесночный</button><br>
-                        <button name="sauce" value="Барбекю">Барбекю</button><br>
+                <div class="products_size">
+                    <form method="POST" class="form">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="sauce1" name="sauce" value="Сырный">
+                                    <label class="label" for="sauce1">Сырный</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="sauce2" name="sauce" value="Кисло-сладкий">
+                                    <label class="label" for="sauce2">Кисло-сладкий</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="sauce3" name="sauce" value="Чесночный">
+                                    <label class="label" for="sauce3">Чесночный</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input" type="radio" id="sauce4" name="sauce" value="Барбекю">
+                                    <label class="label" for="sauce4">Барбекю</label>
+                                </td>
+                                <td>
+                                    <span class="price">30 BYN</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button name="sauce-next">Заказ</button>
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
 

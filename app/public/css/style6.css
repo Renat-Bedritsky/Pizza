@@ -20,14 +20,14 @@ html, body {
     margin: auto;
 }
 
-/* h2 {
+h2 {
     text-align: center;
     font-size: 42px;
     margin: 20px 0;
     font-weight: 400 !important;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
@@ -79,7 +79,7 @@ li {
 .products {
     background-color: rgb(255, 205, 65);
     height: calc(100vh - 400px);
-    min-height: 230px;
+    min-height: 260px;
     width: 420px;
     margin: auto;
     padding-top: 20px;
@@ -90,9 +90,57 @@ li {
 .products_content {
     background-color: white;
     height: calc(100vh - 420px);
-    min-height: 210px;
+    min-height: 240px;
     width: 380px;
     margin: auto;
+}
+
+.form {
+    width: 380px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.input {
+    display: none;
+    width: 380px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 32px;
+    width: 220px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.label:hover {
+    background-color: #eee;
+}
+
+.input:checked + .label {
+    background: rgb(255, 205, 65);
+}
+
+.price {
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.form table button {
+    font-size: 32px;
+    padding: 5px 0;
+    width: 130px;
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    margin: 10px 0 0 220px;
+    border-radius: 180px;
+}
+
+.form table button:hover {
+    border: 2px solid rgb(255, 205, 65);
 }
 
 .window_wrapper {
@@ -112,4 +160,23 @@ li {
 
 .footer ul {
     margin-left: calc(100% - 600px);
+}
+
+.order_enter {
+    /* display: none; */
+    position: absolute;
+    margin-top: -172px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, .5);
+}
+
+.order_enter_window {
+    padding-top: 20px;
+    background-color: white;
+    margin: 200px auto;
+    width: 400px;
+    height: 200px;
+    font-size: 22px;
+    text-align: center;
 }

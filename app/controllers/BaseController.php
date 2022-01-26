@@ -13,6 +13,19 @@ class BaseController extends Controller {
         $_POST['info'] = [];
         $_POST['title'] = 'Заказать';
 
+        if (isset($_POST['type'])) {
+            // setcookie('type', $_POST['type']);
+            $_POST['table'] = 'size';
+        }
+        if (isset($_POST['size'])) {
+            // setcookie('size', $_POST['size']);
+            $_POST['table'] = 'sauce';
+        }
+        if (isset($_POST['sauce'])) {
+            // setcookie('sauce', $_POST['sauce']);
+            header('Refresh: 5');
+        }
+
         if (isset($_POST['table'])) {
             $content = $_POST['table'];
             $_POST['info'] += ['content' => $content];
