@@ -1,11 +1,5 @@
 <?php $info = $_POST['info']; ?>
 
-<?php
-// echo '<pre>';
-// print_r($_POST);
-// echo '</pre';
-?>
-
 <div class="products">
     <div class="products_wrapper">
         <div class="products_content">

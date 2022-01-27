@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заказать</title>
     <link rel="shortcut icon" href="/app/public/images/site-images/images.jpg" type="image/png">
-    <link rel="stylesheet" href="/app/public/css/style9.css">
-    <link rel="stylesheet" href="/app/public/css/media.css">
+    <link rel="stylesheet" href="/app/public/css/style.css">
     <?= $_POST['info']['style']; ?>
 </head>
 
