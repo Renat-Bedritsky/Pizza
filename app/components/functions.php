@@ -1,9 +1,8 @@
 <?php
 
 // Сообщение о принятии заказа
-function Message() {
+function message() {
     return '
-    <style>.order_enter {display: block;}</style>
     <div class="order_enter">
         <div class="order_enter_window">
             <h2>Ваш заказ принят</h2>

@@ -27,15 +27,6 @@ h2 {
     font-weight: 400 !important;
 }
 
-/* a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-li {
-    list-style-type: none;
-} */
-
 .header {
     background-color: rgb(255, 205, 65);
     height: 75px;
@@ -76,73 +67,6 @@ li {
     background-color: #eee;
 }
 
-.products {
-    background-color: rgb(255, 205, 65);
-    height: calc(100vh - 400px);
-    min-height: 260px;
-    width: 420px;
-    margin: auto;
-    padding-top: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.products_content {
-    background-color: white;
-    height: calc(100vh - 420px);
-    min-height: 240px;
-    width: 380px;
-    margin: auto;
-}
-
-.form {
-    width: 380px;
-    margin: auto;
-    padding-top: 20px;
-}
-
-.input {
-    display: none;
-    width: 380px;
-}
-
-.label {
-    display: inline-block;
-    font-size: 32px;
-    width: 220px;
-    cursor: pointer;
-    margin-left: 10px;
-    text-align: center;
-}
-
-.label:hover {
-    background-color: #eee;
-}
-
-.input:checked + .label {
-    background: rgb(255, 205, 65);
-}
-
-.price {
-    font-size: 24px;
-    padding: 0 10px;
-}
-
-.form table button {
-    font-size: 32px;
-    padding: 5px 0;
-    width: 130px;
-    border: 2px solid white;
-    background-color: white;
-    cursor: pointer;
-    margin: 10px 0 0 220px;
-    border-radius: 180px;
-}
-
-.form table button:hover {
-    border: 2px solid rgb(255, 205, 65);
-}
-
 .window_wrapper {
     flex: 1 0 auto;
 }
@@ -162,8 +86,75 @@ li {
     margin-left: calc(100% - 600px);
 }
 
-.order_enter {
-    /* display: none; */
+/* for type.php, size.php and sauce.php */
+.products {
+    background-color: rgb(255, 205, 65);
+    height: calc(100vh - 400px);
+    height: 380px;
+    width: 620px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.products_content {
+    background-color: white;
+    height: calc(100vh - 420px);
+    height: 360px;
+    width: 580px;
+    margin: auto;
+}
+
+.form {
+    width: 580px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.form table button {
+    font-size: 32px;
+    padding: 5px 0;
+    width: 130px;
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    margin: 100px 0 0 40px;
+    border-radius: 180px;
+}
+
+.form table button:hover {
+    border: 2px solid rgb(255, 205, 65);
+}
+
+.input {
+    display: none;
+    width: 380px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 32px;
+    width: 350px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.label:hover {
+    background-color: #eee;
+}
+
+.input:checked + .label {
+    background: rgb(255, 205, 65);
+}
+
+.price {
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+/* for order.php */
+.watch {
     position: absolute;
     margin-top: -172px;
     width: 100vw;
@@ -171,10 +162,61 @@ li {
     background-color: rgba(40, 40, 40, .5);
 }
 
+.watch_wrapper {
+    padding-top: 30px;
+    background-color: white;
+    margin: 200px auto;
+    width: 600px;
+    height: 250px;
+    font-size: 28px;
+}
+
+.watch_wrapper table tr td {
+    width: 300px;
+    padding-top: 10px;
+}
+
+.watch_wrapper table tr td:nth-child(1) {
+    padding-left: 30px;
+}
+
+.watch_wrapper table tr td:nth-child(2) {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.submit {
+    height: 100px;
+}
+
+.order_button {
+    font-size: 28px;
+    padding: 5px 0;
+    width: 130px;
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 180px;
+}
+
+.order_button:hover {
+    border: 2px solid rgb(255, 205, 65);
+}
+
+/* for function.php */
+.order_enter {
+    position: absolute;
+    margin-top: -172px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, .5);
+    z-index: 2;
+}
+
 .order_enter_window {
     padding-top: 20px;
     background-color: white;
-    margin: 200px auto;
+    margin: 220px auto;
     width: 400px;
     height: 200px;
     font-size: 22px;

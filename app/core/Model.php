@@ -21,7 +21,7 @@ class Model {
     }
 
     // Общая функция для получения данных (Всей таблицы или конкретных данных)
-    function getList($select = [], $filter = []) {
+    function selectList($select = [], $filter = []) {
         $sql = 'SELECT ';
         if (!empty($select)) {
             $string = implode(', ', $select);

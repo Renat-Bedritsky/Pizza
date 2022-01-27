@@ -1,15 +1,13 @@
-<?php // $user = $_POST['userData']; ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $_POST['title'] ?></title>
+    <title>Заказать</title>
     <link rel="shortcut icon" href="/app/public/images/site-images/images.jpg" type="image/png">
-    <link rel="stylesheet" href="/app/public/css/style6.css">
+    <link rel="stylesheet" href="/app/public/css/style9.css">
     <link rel="stylesheet" href="/app/public/css/media.css">
-    <?php echo $_POST['info']['style']; ?>
+    <?= $_POST['info']['style']; ?>
 </head>
 
 <body>

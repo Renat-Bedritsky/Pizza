@@ -14,13 +14,11 @@ class Router {
 
     public function run() {
         $uri = $_SERVER['REQUEST_URI'];
-        // echo "$uri<br>";
 
         foreach ($this->routes as $key => $path) {
             if(preg_match("/^\/($key)$/u", $uri)) {
                 $str = preg_replace("/^\/($key)$/u", $path, $uri);
                 $m = explode('/', $str);
-                // echo $str;
 
                 $nameController = array_shift($m).'Controller';
                 $this->controller = 'app/controllers/'.$nameController;
@@ -36,15 +34,9 @@ class Router {
             }
         }
 
-        // echo $this->controller;
-        // echo '<br>';
-        // echo $this->action;
-        // echo '<br>';
-        // print_r($this->params);
-
-        // if (!$this->action) {
-        //     include 'app/core/Controller.php';
-        //     Controller::set404();
-        // }
+        if (!$this->action) {
+            include 'app/core/Controller.php';
+            Controller::set404();
+        }
     }
 }

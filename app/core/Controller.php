@@ -1,8 +1,10 @@
 <?php
 require_once 'app/models/OrdersModel.php';
+require_once 'app/models/ProductsModel.php';
+require_once 'app/models/SauceModel.php';
 
 class Controller {
-    public $orders;
+    public $orders, $products, $sauce;
 
     function __construct() {
         // code
